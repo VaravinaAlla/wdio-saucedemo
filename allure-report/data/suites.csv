@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","584","Login validation for locked_out_user","","2026-06-23","passed","2026-06-23","","UC-2 Data Driven Login","",""
+"","3247","Login validation for standard_user","","2026-06-23","passed","2026-06-23","","UC-2 Data Driven Login","",""
+"","552","Login validation for locked_out_user","","2026-06-23","passed","2026-06-23","","UC-2 Data Driven Login","",""
+"","3220","Login validation for standard_user","","2026-06-23","passed","2026-06-23","","UC-2 Data Driven Login","",""
+"","2375","should complete checkout successfully","","2026-06-23","passed","2026-06-23","","UC-1 Checkout Flow","",""
+"","2484","should complete checkout successfully","","2026-06-23","passed","2026-06-23","","UC-1 Checkout Flow","",""
