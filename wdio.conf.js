@@ -20,7 +20,7 @@ exports.config = {
   // The path of the spec files will be resolved relative from the directory of
   // of the config file unless it's absolute.
   //
-  specs: ['./test/specs/**/*.js'],
+  specs: ['./features/**/*.feature'],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -117,7 +117,7 @@ exports.config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: 'mocha',
+  framework: 'cucumber',
 
   //
   // The number of times to retry the entire specfile when it fails as a whole
@@ -146,9 +146,20 @@ exports.config = {
 
   // Options to be passed to Mocha.
   // See the full list at http://mochajs.org/
-  mochaOpts: {
-    ui: 'bdd',
+  cucumberOpts: {
+    require: [
+      './features/step-definitions/**/*.js',
+      './features/support/**/*.js',
+    ],
+    backtrace: false,
+    dryRun: false,
+    failFast: false,
+    snippets: true,
+    source: true,
+    strict: true,
+    tagExpression: '',
     timeout: 60000,
+    ignoreUndefinedDefinitions: false,
   },
 
   //
